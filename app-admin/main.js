@@ -11,7 +11,7 @@
 var AngularFireCartAdmin = angular.module('AngularFireCartAdmin', [
     'ngRoute',
     "firebase"
-]).value('fbURL', 'https://comras.firebaseio.com/');
+]).value('fbURL', 'https://tienda-virtual-8e0b7.firebaseio.com');
 
 AngularFireCartAdmin.config(function($routeProvider) {
     $routeProvider
