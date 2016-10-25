@@ -2,12 +2,17 @@
     <p class="cart-empty well-cart" ng-hide="itemsCount"></p>
     <form ng-show="itemsCount" name="orderFrom" ng-submit="placeOrder()" novalidate>
         <div id="customer-info" class="col-lg-7">
-            <h2>Shipping Address</h2>
-            <p>Déjanos tus datos para enviar tu compra</p>
+            <h2>Datos de entrega</h2>
+            <p>Déjanos tus datos para enviar tu compra(contraentrega)</p>
             <p class="alert alert-danger" ng-show="error">{{::error}}</p>
             <div class="form-group col-sm-12">
-                <label for="fullname">Full Name</label>
+                <label for="fullname">Nombre</label>
                 <input id="fullname" type="text" class="form-control" ng-model="customer.name" required>
+            </div>
+
+            <div class="form-group col-sm-4">
+                <label for="apt">Identicicaión(CC/NIT)</label>
+                <input id="apt" type="text" class="form-control" ng-model="customer.unit">
             </div>
 
             <div class="form-group col-sm-12">
@@ -16,27 +21,22 @@
             </div>
 
             <div class="form-group col-sm-8">
-                <label for="address">Street address</label>
+                <label for="address">Dirección</label>
                 <input id="address" type="text" class="form-control" ng-model="customer.address" required>
             </div>
 
-            <div class="form-group col-sm-4">
-                <label for="apt">Apt / Unit</label>
-                <input id="apt" type="text" class="form-control" ng-model="customer.unit">
-            </div>
-
             <div class="form-group col-sm-8">
-                <label for="city">City</label>
+                <label for="city">Ciudad</label>
                 <input id="city" type="text" class="form-control" ng-model="customer.city" required>
             </div>
 
-            <div class="form-group col-sm-2">
-                <label for="state">State</label>
+            <div class="form-group col-sm-4">
+                <label for="state">Departamento</label>
                 <input id="state" type="text" class="form-control" ng-model="customer.state" uppercase required>
             </div>
 
-            <div class="form-group col-sm-2">
-                <label for="zip">Zip</label>
+            <div class="form-group col-sm-4">
+                <label for="zip">Teléfono</label>
                 <input id="zip" type="text" class="form-control" ng-model="customer.zip" required>
             </div>
             <hr>
