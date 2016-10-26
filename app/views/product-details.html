@@ -2,7 +2,7 @@
     <div class="col-md-6">
         <figure class="featured-image">
             <img ng-src="{{product.image}}" alt="{{product.title}}" />
-            <span class="sale"  ng-show="product.isOnSale == 'Yes'">Sale</span>
+            <span class="sale"  ng-show="product.isOnSale == 'Yes'">Promoción</span>
         </figure>
     </div>
     <div class="col-md-6 text-center">
@@ -12,8 +12,8 @@
         <p class="text-left">{{product.description}}</p>
         <hr>
         <a href="" class="btn btn-primary btn-lg add2cart" ng-class="{'success' : added}" ng-click="add(product)">
-            <span>Add to Cart <i class="glyphicon glyphicon-shopping-cart"></i></span>
-            <span><i class="glyphicon glyphicon-thumbs-up"></i> Added</span>
+            <span>Agregar al carrito <i class="glyphicon glyphicon-shopping-cart"></i></span>
+            <span><i class="glyphicon glyphicon-thumbs-up"></i> Agregado</span>
         </a>
     </div>
 </div>

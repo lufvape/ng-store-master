@@ -1,10 +1,10 @@
-<a href="#/cart" id="cart-link"><span class="badge">{{itemsCount}}</span><Span class="glyphicon glyphicon-shopping-cart"></span> <b>Cart</b></a>
+<a href="#/cart" id="cart-link"><span class="badge">{{itemsCount}}</span><Span class="glyphicon glyphicon-shopping-cart "></span> <b>Carrito</b></a>
 <div id="cart-content">
     <p class="cart-empty" ng-hide="itemsCount"></p>
     <div ng-show="itemsCount">
         <div class="simple-cart-header">
-            <h4 class="pull-left">{{itemsCount}} item{{itemsCount > 1 && 's'|| ''}}, {{subTotal| currency}}</h4>
-            <a class="pull-right" href="#/cart">View/Edit Cart</a>
+            <h4 class="pull-left">{{itemsCount}} producto{{itemsCount > 1 && 's'|| ''}}, {{subTotal| currency}}</h4>
+            <a class="pull-right" href="#/cart">Ver el carrito</a>
         </div>
         <div class="simple-cart-body">
             <table class="cart-items table">
@@ -17,7 +17,7 @@
                         </td>
                         <td class="details">
                             <h4>{{item.title}} <span class="price">{{item.price| currency}}</span></h4>
-                            <p>qty: <span>{{item.quantity}}</span></p>
+                            <p>cantidad: <span>{{item.quantity}}</span></p>
                         </td>
                         <td>
                             <a class="remove" href="" ng-click="remove(item)" rel="nofollow">&times;</a>
@@ -27,7 +27,7 @@
             </table>
         </div>
         <div class="simple-cart-footer">
-            <a class="btn btn-primary" href="#/checkout">Checkout</a>
+            <a class="btn btn-primary" href="#/checkout">Comprar</a>
         </div>
     </div>
 </div>

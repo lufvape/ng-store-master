@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-        <h1>Categories</h1>
+        <h1>Categorias</h1>
         <!--<button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Add New Product</button>-->
     </div>
     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 pull-right search">
@@ -18,18 +18,18 @@
             <table class="table table-hover">
                 <thead>
                     <tr>
-                        <th>Title</th>
-                        <th>Slug</th>
-                        <th>Actions</th>
+                        <th>Nombre</th>
+                        <th>Nombre</th>
+                        <th>Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>
-                            <input type="text" class="form-control" placeholder="Title" ng-model="title">
+                            <input type="text" class="form-control" placeholder="Nombre" ng-model="title">
                         </td>
                         <td>
-                            <input type="text" class="form-control" placeholder="Slug" ng-value="" ng-model="slug">
+                            <input type="text" class="form-control" placeholder="Nombre" ng-value="" ng-model="slug">
                         </td>
                         <td class="narrow">
                             <a href="" class="glyphicon glyphicon-plus" ng-click="addCategory()"></a>
@@ -39,10 +39,10 @@
 
                     <tr ng-repeat="category in categories| filter:query">
                         <td>
-                            <input type="text" class="form-control" placeholder="Title" ng-model="category.title" ng-change="save(category)">
+                            <input type="text" class="form-control" placeholder="Nombre" ng-model="category.title" ng-change="save(category)">
                         </td>
                         <td>
-                            <input type="text" class="form-control" placeholder="Slug"  ng-model="category.slug" ng-change="save(category)">
+                            <input type="text" class="form-control" placeholder="Nombre"  ng-model="category.slug" ng-change="save(category)">
                         </td>
                         <td class="narrow">
                             <a href="" class="glyphicon glyphicon-trash" ng-click="remove(category)"></a>

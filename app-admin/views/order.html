@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-lg-12">
-        <h1>Order <small>{{order.$id}}</small></h1>
+        <h1>Pedido <small>{{order.$id}}</small></h1>
     </div>
 </div>
 <div class="row well well-lg">
@@ -9,14 +9,14 @@
             <table class="table table-hover table-normal">
                 <thead>
                     <tr>
-                        <th>Order Date</th>
-                        <th>Customer</th>
-                        <th>Sub Total</th>
-                        <th>Tax</th>
-                        <th>Shipping</th>
-                        <th>Grand Total</th>
-                        <th>Status</th>
-                        <th>Actions</th>
+                        <th>Fecha de la orden</th>
+                        <th>Cliente</th>
+                        <th>Subtotal</th>
+                        <th>IVA</th>
+                        <th>Envío</th>
+                        <th>Total de la compra</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -26,7 +26,7 @@
                         </td>
                         <td>
                             <input type="text" class="form-control" placeholder="Customer" ng-model="order.customer" ng-change="save()">
-                            <a href="#/customers/{{order.customer}}" class="help-block"><small class="glyphicon glyphicon-link"></small> View Customer Details</a>
+                            <a href="#/customers/{{order.customer}}" class="help-block"><small class="glyphicon glyphicon-link"></small> Ver detalles del cliente</a>
                         </td>
                         <td>
                             <input type="number" class="form-control" placeholder="Sub Total" ng-model="order.subTotal" ng-change="save()">
@@ -54,23 +54,23 @@
         </div>
     </div>
 </div>
-<h2>Items</h2>
+<h2>Productos</h2>
 <div class="row">
     <div class="col-lg-12">
         <div class="table-responsive">
             <table class="table table-hover table-normal">
                 <thead>
                     <tr>
-                        <th class="narrow">Preview</th>
+                        <th class="narrow">Visualización</th>
                         <th class="narrow">
                             <a href="" ng-click="predicate = 'sku';
-                                        reverse = !reverse">SKU#</a>
+                                        reverse = !reverse">#Referencia</a>
                         </th>
                         <th>Title</th>
-                        <th class="narrow">Quantity</th>
+                        <th class="narrow">Cantidad</th>
                         <th class="narrow">
                             <a href="" ng-click="predicate = 'price';
-                                        reverse = !reverse">Price</a>
+                                        reverse = !reverse">Precio</a>
                         </th>
                     </tr>
                 </thead>

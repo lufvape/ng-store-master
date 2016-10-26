@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-        <h1>Products</h1>
+        <h1>Productos</h1>
         <!--<button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Add New Product</button>-->
     </div>
     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 pull-right search">
@@ -18,21 +18,21 @@
             <table class="table table-hover">
                 <thead>
                     <tr>
-                        <th class="narrow">Preview</th>
+                        <th class="narrow">Visualización</th>
                         <th class="narrow">
                             <a href="" ng-click="predicate = 'sku';
-                                                reverse = !reverse">SKU#</a>
+                                                reverse = !reverse">#Referencia</a>
                         </th>
-                        <th>Title</th>
+                        <th>Nombre</th>
                         <th class="narrow">
                             <a href="" ng-click="predicate = 'price';
-                                                reverse = !reverse">Price</a>
+                                                reverse = !reverse">Precio</a>
                         </th>
-                        <th>Image</th>
-                        <th>Description</th>
-                        <th>Category</th>
-                        <th>On Sale</th>
-                        <th>Actions</th>
+                        <th>Imagen</th>
+                        <th>Descripción</th>
+                        <th>Categoría</th>
+                        <th>Promoción</th>
+                        <th>Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -43,10 +43,10 @@
                             </a>
                         </td>
                         <td class="narrow">
-                            <input type="number" class="form-control" placeholder="SKU" ng-model="sku">
+                            <input type="number" class="form-control" placeholder="REF" ng-model="sku">
                         </td>
                         <td>
-                            <input type="text" class="form-control" placeholder="Title" ng-model="title">
+                            <input type="text" class="form-control" placeholder="Nombre" ng-model="title">
                         </td>
                         <td class="narrow">
                             <input type="number" step="any" class="form-control" placeholder="$" ng-model="price">
@@ -55,7 +55,7 @@
                             <input type="text" class="form-control" placeholder="http://"  ng-model="image">
                         </td>
                         <td>
-                            <textarea class="form-control" rows="2" placeholder="Description" ng-model="description"></textarea>
+                            <textarea class="form-control" rows="2" placeholder="Descripción" ng-model="description"></textarea>
                         </td>
                         <td>
                             <select class="form-control" ng-model="category" ng-options="category.title for category in categories">
@@ -79,10 +79,10 @@
                             </a>
                         </td>
                         <td class="narrow">
-                            <input type="number" class="form-control" placeholder="SKU" ng-model="product.sku" ng-change="save(product)">
+                            <input type="number" class="form-control" placeholder="REF" ng-model="product.sku" ng-change="save(product)">
                         </td>
                         <td>
-                            <input type="text" class="form-control" placeholder="Title" ng-model="product.title" ng-change="save(product)">
+                            <input type="text" class="form-control" placeholder="Nombre" ng-model="product.title" ng-change="save(product)">
                         </td>
                         <td class="narrow">
                             <input type="number" step="any" class="form-control" placeholder="$" ng-model="product.price" ng-change="save(product)">
@@ -91,7 +91,7 @@
                             <input type="text" class="form-control" placeholder="http://"  ng-model="product.image" ng-change="save(product)">
                         </td>
                         <td>
-                            <textarea class="form-control" rows="2" placeholder="Description" ng-model="product.description" ng-change="save(product)"></textarea>
+                            <textarea class="form-control" rows="2" placeholder="Descripción" ng-model="product.description" ng-change="save(product)"></textarea>
                         </td>
                         <td>
                             <select class="form-control" ng-model="product.category" ng-options="category.title as category.title for category in categories" ng-change="save(product)">

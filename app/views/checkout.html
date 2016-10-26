@@ -45,12 +45,12 @@
         <div id="checkout-cart" class="col-lg-5 well-cart">
             <div id="checkout-cart-header">
                 <h4 class="pull-left">{{itemsCount}} item{{itemsCount > 1 && 's'|| ''}}, {{subTotal| currency}}</h4>
-                <a class="pull-right" href="#/cart">View/Edit Cart</a>
+                <a class="pull-right" href="#/cart">Ver carrito</a>
             </div>
             <div class="checkout-item" ng-repeat="item in items">
                 <img ng-src="{{item.image}}">
                 <h4>{{item.title}} <span class="price">{{item.price| currency}}</span></h4>
-                <p>qty: <span>{{item.quantity}}</span></p>
+                <p>cantidad: <span>{{item.quantity}}</span></p>
             </div>
             <ol id="checkout-totals">
                 <li>
@@ -60,13 +60,13 @@
                     </span>
                 </li>
                 <li>
-                    <strong>Tax <small>(16%)</small></strong>
+                    <strong>IVA <small>(16%)</small></strong>
                     <span>
                         {{tax|currency}}
                     </span>
                 </li>
                 <li id="grand-total">
-                    <strong>Grand Total</strong>
+                    <strong>Total de la compra</strong>
                     <span>
                         {{grandTotal| currency}}
                     </span>
