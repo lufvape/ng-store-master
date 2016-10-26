@@ -138,6 +138,10 @@ nav li a{
  * 4.1 - Products
  * -----------------------------------------------------------------------------
  */
+
+#products{
+    margin-top: 10%;
+}
 #products a {
   position: relative;
   float: left;
@@ -147,7 +151,6 @@ nav li a{
   text-decoration: none;
   color: #fff;
   overflow: hidden;
-  border: 1px solid #f4f4f4;
 }
 #products a img {
   width: 100%;
@@ -163,7 +166,7 @@ nav li a{
   -webkit-backface-visibility: hidden;
 }
 #products a:hover {
-  border: 1px solid #333;
+  border: 1px solid #3e8f3e;
 }
 #products a:hover img {
   -moz-transform: scale(1, 1);
@@ -171,9 +174,7 @@ nav li a{
   -webkit-transform: scale(1, 1);
   transform: scale(1, 1);
 }
-#products .price {
-  float: right;
-}
+
 #products .price i {
   font-style: normal;
   font-size: 0.9em;
@@ -186,28 +187,26 @@ nav li a{
   width: 100%;
   bottom: 0;
   left: 0;
-  padding: 20px 10px 10px;
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC42Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
-  background-size: 100%;
-  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+  padding: 50px 10px 10px;
+
 }
 
 .product-title {
   display: block;
   padding-top: 2px;
   font-style: normal;
-  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  color: #e38d13;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .sale {
   display: block;
   position: absolute;
   z-index: 10;
-  right: -26px;
-  top: 15px;
-  width: 100px;
+  right: -25px;
+  top: 45px;
+  width: 120px;
   height: 20px;
   line-height: 20px;
   background: #ce2028;
@@ -217,14 +216,14 @@ nav li a{
   letter-spacing: 4px;
   text-align: center;
   text-transform: uppercase;
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .product {
-  margin-bottom: 30px;
+  margin-bottom: 5%;
 }
 
 /*
@@ -246,10 +245,6 @@ nav li a{
  are where the transition destination properties
  are set so that the animation knows what to animate.
 */
-.product.ng-enter.ng-enter-active,
-.product.ng-move.ng-move-active {
-  opacity: 1;
-}
 
 #product {
   margin-top: 10%;
@@ -262,6 +257,7 @@ nav li a{
 #product .price {
   font-size: 1.5em;
   font-weight: 300;
+  text-align: center;
 }
 
 .add2cart {
@@ -535,6 +531,7 @@ div[class^="simple-cart-"] {
 
 #checkout-cart {
   float: right;
+   background-color: #dff0d8;
 }
 
 #customer-info {

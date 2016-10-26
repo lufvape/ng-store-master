@@ -42,7 +42,7 @@
                             <li>
                                 <a href="#/">Todos los productos</a>
                             </li>
-                            <li ng-repeat="category in categories">
+                            <li ng-repeat="category in categories | orderBy: category.title">
                                 <a href="#/categories/{{category.slug}}">{{category.title}}</a>
                             </li>
                             <li>

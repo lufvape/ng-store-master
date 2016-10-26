@@ -17,7 +17,7 @@
                             <h3>{{item.title}} <span class="price">{{item.price| currency}}</span></h3>
                             <div class="input-group quantity">
                                 <span class="input-group-addon" ng-click="add(item, -1);">-</span>
-                                <input type="text" class="form-control" value="{{item.quantity}}">
+                                <input type="text" class="form-control" value="{{item.quantity}}" readonly>
                                 <span class="input-group-addon" ng-click="add(item, 1)">+</span>
                             </div>
                         </td>
