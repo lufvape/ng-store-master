@@ -41,6 +41,16 @@ img {
   margin-top: 10%;
 }
 
+.img-logo{
+    max-width: 50%;
+    margin-left: -10%;
+}
+
+
+.img-logo2{
+    max-width: 50%;
+}
+
 /**
  * 2 - Fonts
  * -----------------------------------------------------------------------------
@@ -115,25 +125,44 @@ img {
 
 .navbar{
     height: 10% !important;
-    border-bottom: solid 10px #00b3ee !important;
+    border-bottom: solid 10px #FFB30F !important;
+    background-color: #79AF21 !important;
 }
 
 footer p{
-    font-size: 1rem;
+    font-size: 2rem;
+}
+
+.txt-footer{
+    font-size: 0.9rem;
 }
 
 nav li a{
     font-size: 2.5rem;
+    color: whitesmoke !important;
+}
+
+b{
+    color: whitesmoke !important;
 }
 
 .glyphicon-shopping-cart{
     font-size: 20px;
+    color: whitesmoke !important;
 }
 
 /**
  * 4 - Content
  * -----------------------------------------------------------------------------
  */
+
+.btn-primary{
+    background-color: #FFB30F;
+    border: #FFB30F;
+}
+.btn-primary:hover{
+    background-color: #FFB30F;
+}
 /**
  * 4.1 - Products
  * -----------------------------------------------------------------------------
@@ -149,7 +178,7 @@ nav li a{
   max-width: 320px;
   min-height: 265px;
   text-decoration: none;
-  color: #fff;
+  color: whitesmoke;
   overflow: hidden;
 }
 #products a img {
@@ -195,7 +224,7 @@ nav li a{
   display: block;
   padding-top: 2px;
   font-style: normal;
-  color: #e38d13;
+  color: #79AF21;
   font-size: 2rem;
   text-align: center;
 }
@@ -209,7 +238,7 @@ nav li a{
   width: 120px;
   height: 20px;
   line-height: 20px;
-  background: #ce2028;
+  background: #FFB30F;
   color: #fff;
   font-size: 0.666em;
   font-weight: 700;
@@ -281,6 +310,7 @@ nav li a{
 }
 .add2cart span:last-child {
   opacity: 0;
+    background-color: #79AF21;
 }
 .add2cart span:last-child .glyphicon {
   margin-right: 5px;
@@ -288,8 +318,8 @@ nav li a{
 
 .add2cart.success {
   color: #fff;
-  background-color: #42ca7e;
-  border-color: #00cc5a;
+  background-color: #79AF21;
+  border-color: #79AF21;
 }
 .add2cart.success span:first-child {
   margin-top: -48px;
@@ -531,7 +561,12 @@ div[class^="simple-cart-"] {
 
 #checkout-cart {
   float: right;
-   background-color: #dff0d8;
+   background-color: #79AF21;
+    color: whitesmoke !important;
+}
+
+#checkout-cart a{
+    color: #FFB30F;
 }
 
 #customer-info {
@@ -553,6 +588,7 @@ div[class^="simple-cart-"] {
   margin: 0;
   line-height: 2;
   font-weight: bold;
+    color: whitesmoke !important;
 }
 
 .checkout-item {
@@ -576,7 +612,7 @@ div[class^="simple-cart-"] {
   margin-top: 0;
 }
 .checkout-item .price {
-  color: #777;
+  color: whitesmoke;
   margin-left: 10px;
 }
 
@@ -718,7 +754,7 @@ footer .glyphicon-lock {
   }
     .navbar{
         height: 10% !important;
-        border-bottom: solid 10px #00b3ee !important;
+        border-bottom: solid 10px #FFB30F !important;
     }
 
     .navbar h1{
@@ -732,6 +768,15 @@ footer .glyphicon-lock {
 
     .badge{
         font-size: 10px !important;
+    }
+
+    .img-logo{
+        max-width: 40%;
+        margin-left: -45%;
+    }
+
+    .img-logo2{
+        max-width: 50%;
     }
 }
 /* Desktop */
@@ -750,7 +795,8 @@ footer .glyphicon-lock {
 
   .navbar{
       height: 10% !important;
-      border-bottom: solid 10px #00b3ee !important;
+      border-bottom: solid 10px #FFB30F !important;
+    background-color: #79AF21;
   }
 
   #cart-dropdown {
@@ -765,6 +811,16 @@ footer .glyphicon-lock {
     .navbar h1{
         font-size: 5rem;
         margin-left: -20%;
+    }
+
+    .img-logo{
+        max-width: 50%;
+        margin-left: -60%;
+    }
+
+    .img-logo2{
+        max-width: 50%;
+        margin-left: 40%;
     }
 
 

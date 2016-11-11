@@ -78,16 +78,18 @@
         </div>
     </form>
     <p>Aún si pagas por medio de PayPal,nos debes dejar tus datos para enviar tu compra</p>
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-        <input type="hidden" name="cmd" value="_xclick">
-        <input type="hidden" name="business" value="accounts@freelanceswitch.com">
-        <input type="hidden" name="item_name" value="compra a medilinks">
-        <input type="hidden" name="item_number" value="{{items.length}}">
-        <input type="hidden" name="amount" value="{{grandTotal| currency}}">
-        <input type="hidden" name="currency_code" value="USD">
-        <input type="hidden" name="lc" value="AU">
-        <input type="hidden" name="bn" value="PP-BuyNowBF">
-        <input type="image" src="https://www.paypal.com/en_AU/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online.">
-        <img alt="" border="0" src="https://www.paypal.com/en_AU/i/scr/pixel.gif" width="1" height="1">
+    <form method="post" action="https://sandbox.gateway.payulatam.com/ppp-web-gateway/" target="_blank">
+        <input name="merchantId"    type="hidden"  value="508029"   >
+        <input name="accountId"     type="hidden"  value="512321" >
+        <input name="description"   type="hidden"  value="Compra a medilinks"  >
+        <input name="referenceCode" type="hidden"  value="TestPayU" >
+        <input name="amount"        type="hidden"  value="{{grandTotal | currency}}"   >
+        <input name="tax"           type="hidden"  value="{{tax | currency}}"  >
+        <input name="taxReturnBase" type="hidden"  value="0" >
+        <input name="currency"      type="hidden"  value="COP" >
+        <input name="signature"     type="hidden"  value="ba9ffa71559580175585e45ce70b6c37"  >
+        <input name="responseUrl"    type="hidden"  value="http://www.test.com/response" >
+        <input name="confirmationUrl"    type="hidden"  value="http://www.test.com/confirmation" >
+        <input class="btn btn-primary" name="Submit"        type="submit"  value="Comprar" >
     </form>
 </div>
