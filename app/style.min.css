@@ -44,6 +44,7 @@ img {
 .img-logo{
     max-width: 50%;
     margin-left: -10%;
+    margin-top: -10%;
 }
 
 
@@ -126,7 +127,7 @@ img {
 .navbar{
     height: 10% !important;
     border-bottom: solid 10px #FFB30F !important;
-    background-color: #79AF21 !important;
+    background-color: whitesmoke !important;
 }
 
 footer p{
@@ -139,16 +140,16 @@ footer p{
 
 nav li a{
     font-size: 2.5rem;
-    color: whitesmoke !important;
+    color: #17572A !important;
 }
 
 b{
-    color: whitesmoke !important;
+    color: #17572A !important;
 }
 
 .glyphicon-shopping-cart{
     font-size: 20px;
-    color: whitesmoke !important;
+    color: #17572A !important;
 }
 
 /**
@@ -178,7 +179,7 @@ b{
   max-width: 320px;
   min-height: 265px;
   text-decoration: none;
-  color: whitesmoke;
+  color: #17572A;
   overflow: hidden;
 }
 #products a img {
@@ -224,7 +225,7 @@ b{
   display: block;
   padding-top: 2px;
   font-style: normal;
-  color: #79AF21;
+  color: #17572A;
   font-size: 2rem;
   text-align: center;
 }
@@ -310,7 +311,7 @@ b{
 }
 .add2cart span:last-child {
   opacity: 0;
-    background-color: #79AF21;
+    background-color: #17572A;
 }
 .add2cart span:last-child .glyphicon {
   margin-right: 5px;
@@ -318,8 +319,8 @@ b{
 
 .add2cart.success {
   color: #fff;
-  background-color: #79AF21;
-  border-color: #79AF21;
+  background-color: #17572A;
+  border-color: #17572A;
 }
 .add2cart.success span:first-child {
   margin-top: -48px;
@@ -561,7 +562,7 @@ div[class^="simple-cart-"] {
 
 #checkout-cart {
   float: right;
-   background-color: #79AF21;
+   background-color: #17572A;
     color: whitesmoke !important;
 }
 
@@ -588,7 +589,7 @@ div[class^="simple-cart-"] {
   margin: 0;
   line-height: 2;
   font-weight: bold;
-    color: whitesmoke !important;
+    color: #17572A !important;
 }
 
 .checkout-item {
@@ -612,7 +613,7 @@ div[class^="simple-cart-"] {
   margin-top: 0;
 }
 .checkout-item .price {
-  color: whitesmoke;
+  color: #17572A;
   margin-left: 10px;
 }
 
@@ -796,7 +797,7 @@ footer .glyphicon-lock {
   .navbar{
       height: 10% !important;
       border-bottom: solid 10px #FFB30F !important;
-    background-color: #79AF21;
+    background-color: #17572A;
   }
 
   #cart-dropdown {
