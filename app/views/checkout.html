@@ -60,7 +60,7 @@
                     </span>
                 </li>
                 <li>
-                    <strong>IVA <small>(16%)</small></strong>
+                    <strong>IVA <small>(19%)</small></strong>
                     <span>
                         {{tax|currency}}
                     </span>
@@ -76,21 +76,5 @@
         <div id="checkout-footer" class="col-lg-12">
             <button type="submit" class="btn btn-lg btn-primary col-lg-6 col-md-9 col-sm-12" value="Place Order">Ordenar</button>
         </div>
-    </form>
-    <p>Aún si pagas por medio de PayPal,nos debes dejar tus datos para enviar tu compra</p>
-    <form method="post" action="https://gateway.payulatam.com/ppp-web-gateway/" accept-charset="UTF-8">
-          <input type="image" border="0" alt="" src="http://www.payulatam.com/img-secure-2015/boton_pagar_grande.png" onClick="this.form.urlOrigen.value = window.location.href;"/>
-          <input name="merchantId" type="hidden" value="605291"/>
-          <input name="accountId" type="hidden" value="608289"/>
-          <input name="description" type="hidden" value="lápiz"/>
-          <input name="referenceCode" type="hidden" value="0023"/>
-          <input name="amount" type="hidden" value="23800"/>
-          <input name="tax" type="hidden" value="0"/>
-          <input name="taxReturnBase" type="hidden" value="0"/>
-          <input name="currency" type="hidden" value="COP"/>
-          <input name="lng" type="hidden" value="es"/>
-          <input name="sourceUrl" id="urlOrigen" value="" type="hidden"/>
-          <input name="buttonType" value="SIMPLE" type="hidden"/>
-          <input name="signature" value="a7f810d348326b41c14ba578d898f0fc96b15011da288fe6964ec625491fdca6" type="hidden"/>
     </form>
 </div>

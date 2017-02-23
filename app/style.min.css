@@ -37,8 +37,13 @@ img {
 }
 
 .page-header {
-  /* overwrite Bootstrap */
-  margin-top: 10%;
+     /* overwrite Bootstrap */
+     margin-top: 10%;
+ }
+
+.abajo {
+    /* overwrite Bootstrap */
+    margin-top: 20%;
 }
 
 .img-logo{
@@ -49,7 +54,7 @@ img {
 
 
 .img-logo2{
-    max-width: 50%;
+    max-width: 90%;
 }
 
 /**
@@ -140,6 +145,10 @@ footer p{
 
 nav li a{
     font-size: 2.5rem;
+    color: #17572A !important;
+}
+
+h2, h1{
     color: #17572A !important;
 }
 
@@ -821,7 +830,6 @@ footer .glyphicon-lock {
 
     .img-logo2{
         max-width: 50%;
-        margin-left: 40%;
     }
 
 
