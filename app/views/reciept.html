@@ -1,7 +1,32 @@
 <div id="thank-you" class="row">
     <div class="col-lg-12 text-center">
-        <h1 class="abajo"> <strong>Muchas gracias</strong> por tu pedido</h1>
-        <div class="well-cart"><h2>{{order.confirmationNumber}}</h2><br><p>Puedes recoger el pedido en MARFIL o pedirlo a tu puerta.</p></div>
-        <a class="btn btn-lg btn-primary" href="mailto:jorgelozadamesa@gmail.com?subject=Enviar {{order.confirmationNumber}}">Pedir a mi dirección!</a>
+        <h1>Muchas gracias por comprar con nosotros, esperamos verte pronto nuevamente</h1>
+        <p>Este es el número de tu pedido.</p>
+        <div class="well-cart"><h2>{{order.confirmationNumber}}</h2></div>
+        <ol id="checkout-totals">
+            <li id="grand-total">
+                <strong>Total de la compra</strong>
+                    <span>
+                        {{grandTotal}}
+                    </span>
+            </li>
+        </ol>
+        <p>Puedes pagar ahora mismo si lo deseas</p>
     </div>
+
+    <form>
+        <script src="https://s3-us-west-2.amazonaws.com/epayco/v1.0/checkoutEpayco.js"
+                class="epayco-button"
+                data-epayco-key="491d6a0b6e992cf924edd8d3d088aff1"
+                data-epayco-amount="{{grandTotal}}"
+                data-epayco-name="Compra en MARFIL"
+                data-epayco-description="{{order.confirmationNumber}}"
+                data-epayco-currency="cop"
+                data-epayco-country="co"
+                data-epayco-test="true"
+                data-epayco-response="https://ejemplo.com/respuesta.html"
+                data-epayco-confirmation="https://ejemplo.com/confirmacion" >
+        </script>
+    </form>
+
 </div>
