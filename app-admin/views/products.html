@@ -29,6 +29,7 @@
                                                 reverse = !reverse">Precio</a>
                         </th>
                         <th>Imagen</th>
+                        <th>Ficha técnica</th>
                         <th>Descripción</th>
                         <th>Categoría</th>
                         <th>Promoción</th>
@@ -53,6 +54,9 @@
                         </td>
                         <td>
                             <input type="text" class="form-control" placeholder="http://"  ng-model="image">
+                        </td>
+                        <td>
+                            <input type="text" class="form-control" placeholder="http://"  ng-model="fichat">
                         </td>
                         <td>
                             <textarea class="form-control" rows="2" placeholder="Descripción" ng-model="description"></textarea>
@@ -89,6 +93,9 @@
                         </td>
                         <td>
                             <input type="text" class="form-control" placeholder="http://"  ng-model="product.image" ng-change="save(product)">
+                        </td>
+                        <td>
+                            <input type="text" class="form-control" placeholder="http://"  ng-model="product.fichat" ng-change="save(product)">
                         </td>
                         <td>
                             <textarea class="form-control" rows="2" placeholder="Descripción" ng-model="product.description" ng-change="save(product)"></textarea>

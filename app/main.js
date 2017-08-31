@@ -7,7 +7,7 @@ var AngularFireCart = angular.module("AngularFireCart", [
     "ngAnimate",
     "cartModule",
     "firebase"
-]).value('fbURL', 'https://tienda-virtual-8e0b7.firebaseio.com');
+]).value('fbURL', 'https://tienda-virtual-8e0b7.com');
 
 /* Routes */
 AngularFireCart.config(['$routeProvider',
